@@ -119,7 +119,7 @@ def create_folder_structure(supir):
     }
 
 # Streamlit UI
-st.title("Testing Upload Foto Surat Jalan")
+st.title("📦 Sistem Upload Dokumen Pengiriman")
 
 with st.form("upload_form"):
     supir = st.selectbox("Nama Supir*", options=DRIVERS, index=None)
@@ -179,6 +179,7 @@ if submitted:
                     supir,
                     segel_url,
                     muat_url,
+                    folders['main_folder_url']
                 ]
                 
                 # Add each surat jalan URL as a separate column
@@ -188,6 +189,13 @@ if submitted:
                 sheet.append_row(row_data, value_input_option="USER_ENTERED")
                 
                 st.success("✅ Data berhasil disimpan!")
+                st.markdown(f"""
+                **Links:**
+                - [Folder Utama]({folders['main_folder_url']})
+                - [Foto Segel]({segel_url})
+                - [Foto Muat]({muat_url})
+                - [Foto Surat Jalan]({folders['surat_jalan']['url']}) ({len(surat_jalan_files)} file)
+                """)
                 
             except Exception as e:
                 st.error(f"❌ Error: {str(e)}")
