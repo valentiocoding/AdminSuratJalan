@@ -122,34 +122,38 @@ def create_folder_structure(supir):
 # Streamlit UI
 st.title("Testing Upload Foto Surat Jalan")
 
-with st.form("upload_form"):
+
+check= st.checkbox("Tidak ada Nama? Pakai No Plat.")
+if check:
+    supir = st.text_input("Nomorplat")
+else:
     supir = st.selectbox("Nama Supir*", options=DRIVERS, index=None)
-    
-    st.subheader("Foto Segel*")
-    segel_file = st.file_uploader(
-        "Upload foto segel (single photo)",
-        type=["png", "jpg", "jpeg"],
-        accept_multiple_files=False,
-        key="segel"
-    )
 
-    st.subheader("Foto Muat*")
-    muat_file = st.file_uploader(
-        "Upload foto muat (single photo)",
-        type=["png", "jpg", "jpeg"],
-        accept_multiple_files=False,
-        key="muat"
-    )
-    
-    st.subheader("Foto Surat Jalan*")
-    surat_jalan_files = st.file_uploader(
-        "Upload foto surat jalan (bisa multiple)",
-        type=["png", "jpg", "jpeg"],
-        accept_multiple_files=True,
-        key="sj"
-    )
+st.subheader("Foto Segel*")
+segel_file = st.file_uploader(
+    "Upload foto segel (single photo)",
+    type=["png", "jpg", "jpeg"],
+    accept_multiple_files=False,
+    key="segel"
+)
 
-    submitted = st.form_submit_button("💾 Upload")
+st.subheader("Foto Muat*")
+muat_file = st.file_uploader(
+    "Upload foto muat (single photo)",
+    type=["png", "jpg", "jpeg"],
+    accept_multiple_files=False,
+    key="muat"
+)
+
+st.subheader("Foto Surat Jalan*")
+surat_jalan_files = st.file_uploader(
+    "Upload foto surat jalan (bisa multiple)",
+    type=["png", "jpg", "jpeg"],
+    accept_multiple_files=True,
+    key="sj"
+)
+
+submitted = st.button("💾 Upload")
 
 if submitted:
     if not supir:
