@@ -149,7 +149,7 @@ with st.form("upload_form"):
         key="sj"
     )
 
-    submitted = st.form_submit_button("💾 Simpan Data")
+    submitted = st.form_submit_button("💾 Upload")
 
 if submitted:
     if not supir:
