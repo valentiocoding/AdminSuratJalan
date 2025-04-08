@@ -162,7 +162,7 @@ if submitted:
     elif not surat_jalan_files or not segel_file or not muat_file:
         st.warning("⚠️ Harap upload file untuk semua kategori!")
     else:
-        with st.spinner("⏳ Membuat struktur folder dan mengupload file..."):
+        with st.spinner("⏳ Wait . . ."):
             try:
                 # 1. Create folder structure
                 folders = create_folder_structure(supir)
