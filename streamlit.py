@@ -6,6 +6,7 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseUpload
 import io
 
+st.set_page_config("KTI - Foto Surat Jalan")
 # Constants
 MAIN_DRIVE_FOLDER_ID = '1-RJY0lWMM5SyenDCyEZs1gv_W8N3Un4k'
 SHEET_ID = "10sXzBbFk-WBSpsdtsw42BpTwDp5Xpe8TWxL6SL_xhiY"
