@@ -121,7 +121,7 @@ def create_folder_structure(supir):
     }
 
 # Streamlit UI
-st.title("Upload Foto Surat Jalan")
+st.title("Upload Foto Surat Jalan - KTI")
 
 
 check= st.checkbox("Tidak ada Nama? Pakai No Plat.")
