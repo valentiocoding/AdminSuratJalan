@@ -182,7 +182,7 @@ if submitted:
                 # Prepare the row data with surat jalan URLs in separate columns
                 row_data = [
                     datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                    "",
+                    " ",
                     supir,folders['main_folder_url'],
                     segel_url,
                     muat_url,
