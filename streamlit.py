@@ -112,12 +112,10 @@ def create_folder_structure(supir):
     main_folder_id, main_folder_url = create_folder(main_folder_name, MAIN_DRIVE_FOLDER_ID)
     
     # Create subfolders
-    surat_jalan_id, surat_jalan_url = create_folder("Surat Jalan", main_folder_id)
     
     return {
         'main_folder_url': main_folder_url,
         'main_folder_id': main_folder_id,
-        'surat_jalan': {'id': surat_jalan_id, 'url': surat_jalan_url}
     }
 
 # Streamlit UI
