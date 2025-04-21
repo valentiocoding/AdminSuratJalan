@@ -199,7 +199,7 @@ if submitted:
                 muat_url = upload_image_to_folder(muat_file, folders['main_folder_id'])
                 
                 # Multiple surat jalan photos go to subfolder
-                surat_jalan_urls = upload_images_to_folder(surat_jalan_files, folders['surat_jalan']['id'])
+                surat_jalan_urls = upload_images_to_folder(surat_jalan_files, folders['main_folder_id'])
                 
                 # 3. Save to Google Sheets
                 client = get_sheets_client()
