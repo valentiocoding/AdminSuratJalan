@@ -15,7 +15,7 @@ DRIVERS = ["Ade", "Ahmad", "Anta", "Antoni", "Ari", "Atma", "Bari", "Cecep",
            "Happy", "Hendi", "Hendra", "Herman", "Marlep", "Nanang K", "Nasrul", 
            "Pendi", "Riyan", "Rudi", "Sitorus", "Solihin", "Sueb", "Sukandar", 
            "Sunggu", "Syamsul", "Yani M", "Yani S", "Yayan", 'Fajar', 'Dede']
-PLAT = ["B9336UXY", "B9372UXY", "B9371UXY", "B9572UXY", "B9629UXY", "B9605UXY", "B9628UXY", "B9571UXY", "B9731UXY", "B9986UEX", "B9973UEX", "B9036UEY", "B9796UXY", "B9031UEY", "B9985UEX", "B9035UEY", "B9083UEY", "B9102UEY", "B9088UEY", "B9132UEY", "Unit 21", "Unit 22", "Unit 23", "Unit 24", "Unit 25", "Unit 26"]
+PLAT = ["B9336UXY", "B9372UXY", "B9371UXY", "B9572UXY", "B9629UXY", "B9605UXY", "B9628UXY", "B9571UXY", "B9731UXY", "B9986UEX", "B9973UEX", "B9036UEY", "B9796UXY", "B9031UEY", "B9985UEX", "B9035UEY", "B9083UEY", "B9102UEY", "B9088UEY", "B9132UEY", "B9344UEY", "B9343UEY", "Unit 23", "Unit 24", "Unit 25", "Unit 26"]
 
 # Initialize Google Services
 @st.cache_resource
